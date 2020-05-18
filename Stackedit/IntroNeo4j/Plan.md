@@ -57,9 +57,13 @@ para automatizar mejor el poblado de la base usar parametros
 MERGE(m:MovieFoo { title: 'foo2'}) //mi ejemplo de creacion de nodos
 ```
 
+## indices 
 
+```sql
+CREATE INDEX ON :Movie(released)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzE4MjMzOCwtMTM5Mzg0MTM1Myw0Mj
-U5Njc0OTIsMzMxMzE5ODcxLDEzNzI1MDExNDEsLTEzOTUyNjk5
-MCw2MzAzOTA3NDNdfQ==
+eyJoaXN0b3J5IjpbLTEwMDQ5ODE3NzAsLTcwMzE4MjMzOCwtMT
+M5Mzg0MTM1Myw0MjU5Njc0OTIsMzMxMzE5ODcxLDEzNzI1MDEx
+NDEsLTEzOTUyNjk5MCw2MzAzOTA3NDNdfQ==
 -->
