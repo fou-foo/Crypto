@@ -24,7 +24,10 @@ MATCH (p:Person)
 WHERE p.name = 'Tom Hanks' OR p.name = 'Robin Wright' OR p.name = 'Gary Sinise'
 CREATE (p)-[:ACTED_IN]->(m)
 ```
+### Add properties to relationships 
+
+``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA5NTk4OTQsLTEzOTUyNjk5MCw2Mz
+eyJoaXN0b3J5IjpbLTExODg5MTExMDksLTEzOTUyNjk5MCw2Mz
 AzOTA3NDNdfQ==
 -->
