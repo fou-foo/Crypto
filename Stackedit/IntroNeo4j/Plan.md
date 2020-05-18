@@ -6,14 +6,14 @@ Luego relaciones
 
 Ejemplo 
 
- ´´´cypher```
+ ```cypher
  MATCH (a:Person), (m:Movie), (p:Person)
 WHERE a.name = 'Liam Neeson' AND
       m.title = 'Batman Begins' AND
       p.name = 'Benjamin Melniker'
 CREATE (a)-[:ACTED_IN]->(m)<-[:PRODUCED]-(p)
 RETURN a, m, p
-´´´
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MjY5MTg5OSw2MzAzOTA3NDNdfQ==
+eyJoaXN0b3J5IjpbLTE5MzA1NjcwODEsNjMwMzkwNzQzXX0=
 -->
