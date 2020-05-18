@@ -15,6 +15,16 @@ RETURN a, m
 ```
 
 __When you create relationships based upon a `MATCH` clause, you must be certain that only a single node is returned for the `MATCH`, otherwise multiple relationships will be created.__
+
+# Crear sin return 
+```sql 
+MATCH (m:Movie)
+WHERE m.title = 'Forrest Gump'
+MATCH (p:Person)
+WHERE p.name = 'Tom Hanks' OR p.name = 'Robin Wright' OR p.name = 'Gary Sinise'
+CREATE (p)-[:ACTED_IN]->(m)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTUyNjk5MCw2MzAzOTA3NDNdfQ==
+eyJoaXN0b3J5IjpbLTEwNjA5NTk4OTQsLTEzOTUyNjk5MCw2Mz
+AzOTA3NDNdfQ==
 -->
