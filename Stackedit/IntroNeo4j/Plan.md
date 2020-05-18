@@ -53,11 +53,13 @@ para automatizar mejor el poblado de la base usar parametros
 
 ```sql
 :param actorName => 'Tom Hanks'
+
+MERGE(m:MovieFoo { title: 'foo2'}) //mi ejemplo de creacion de nodos
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTM4NDEzNTMsNDI1OTY3NDkyLDMzMT
-MxOTg3MSwxMzcyNTAxMTQxLC0xMzk1MjY5OTAsNjMwMzkwNzQz
-XX0=
+eyJoaXN0b3J5IjpbLTcwMzE4MjMzOCwtMTM5Mzg0MTM1Myw0Mj
+U5Njc0OTIsMzMxMzE5ODcxLDEzNzI1MDExNDEsLTEzOTUyNjk5
+MCw2MzAzOTA3NDNdfQ==
 -->
