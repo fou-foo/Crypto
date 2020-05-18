@@ -41,11 +41,13 @@ SET rel.research = 'war history'
 
 ```sql
 MERGE (variable:Label{nodeProperties})
-RETURN variable
+RETURN variable // nodos
 
+MERGE (variable:Label {nodeProperties})-[:REL_TYPE]->(otherNode)
+RETURN variable //relaciones
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMxMzE5ODcxLDEzNzI1MDExNDEsLTEzOT
-UyNjk5MCw2MzAzOTA3NDNdfQ==
+eyJoaXN0b3J5IjpbNDI1OTY3NDkyLDMzMTMxOTg3MSwxMzcyNT
+AxMTQxLC0xMzk1MjY5OTAsNjMwMzkwNzQzXX0=
 -->
