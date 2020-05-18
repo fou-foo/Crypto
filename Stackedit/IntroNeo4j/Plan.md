@@ -62,8 +62,12 @@ MERGE(m:MovieFoo { title: 'foo2'}) //mi ejemplo de creacion de nodos
 ```sql
 CREATE INDEX ON :Movie(released)
 ```
+
+
+-   Add a  _uniqueness constraint_  that ensures that a value for a property is unique for all nodes of that type.
+-   Add an  _existence constraint_  that ensures that when a node or relationship is created or modified, it must have certain properties set.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDQ5ODE3NzAsLTcwMzE4MjMzOCwtMT
-M5Mzg0MTM1Myw0MjU5Njc0OTIsMzMxMzE5ODcxLDEzNzI1MDEx
-NDEsLTEzOTUyNjk5MCw2MzAzOTA3NDNdfQ==
+eyJoaXN0b3J5IjpbLTE0NjUwMjIyMiwtMTAwNDk4MTc3MCwtNz
+AzMTgyMzM4LC0xMzkzODQxMzUzLDQyNTk2NzQ5MiwzMzEzMTk4
+NzEsMTM3MjUwMTE0MSwtMTM5NTI2OTkwLDYzMDM5MDc0M119
 -->
