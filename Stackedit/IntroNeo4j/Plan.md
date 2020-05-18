@@ -46,8 +46,18 @@ RETURN variable // nodos
 MERGE (variable:Label {nodeProperties})-[:REL_TYPE]->(otherNode)
 RETURN variable //relaciones
 
+```
+
+
+para automatizar mejor el poblado de la base usar parametros 
+
+```sql
+:param actorName => 'Tom Hanks'
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI1OTY3NDkyLDMzMTMxOTg3MSwxMzcyNT
-AxMTQxLC0xMzk1MjY5OTAsNjMwMzkwNzQzXX0=
+eyJoaXN0b3J5IjpbLTEzOTM4NDEzNTMsNDI1OTY3NDkyLDMzMT
+MxOTg3MSwxMzcyNTAxMTQxLC0xMzk1MjY5OTAsNjMwMzkwNzQz
+XX0=
 -->
