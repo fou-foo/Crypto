@@ -6,7 +6,7 @@ Luego relaciones
 
 Ejemplo 
 
- ```cypher
+ ```sql
  MATCH (a:Person), (m:Movie), (p:Person)
 WHERE a.name = 'Liam Neeson' AND
       m.title = 'Batman Begins' AND
@@ -14,6 +14,8 @@ WHERE a.name = 'Liam Neeson' AND
 CREATE (a)-[:ACTED_IN]->(m)<-[:PRODUCED]-(p)
 RETURN a, m, p
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzA1NjcwODEsNjMwMzkwNzQzXX0=
+eyJoaXN0b3J5IjpbMTc1NDAxMjMwMiw2MzAzOTA3NDNdfQ==
 -->
