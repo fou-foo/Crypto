@@ -32,10 +32,20 @@ WHERE p1.name = 'Tom Hanks' AND p2.name = 'Gary Sinise'
 SET rel.research = 'war history' amd rel.otraproiedad=15
 `MATCH (p1:Person)-[rel:HELPED]->(p2:Person)
 WHERE p1.name = 'Tom Hanks' AND p2.name = 'Gary Sinise'
-SET rel.research = 'war history'```
+SET rel.research = 'war history'
+```
 
 # hasta aqui esta lo necesario para las cryptos con relacion de 'valer' con propiedades de unidad en que se mide y 'valor' podemos crear otra relacion para otro tipo de cambio 
+
+### mejores practicas
+
+```sql
+MERGE (variable:Label{nodeProperties})
+RETURN variable
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjUwMTE0MSwtMTM5NTI2OTkwLDYzMD
-M5MDc0M119
+eyJoaXN0b3J5IjpbMzMxMzE5ODcxLDEzNzI1MDExNDEsLTEzOT
+UyNjk5MCw2MzAzOTA3NDNdfQ==
 -->
