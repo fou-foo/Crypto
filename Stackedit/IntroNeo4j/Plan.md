@@ -37,8 +37,8 @@ CASE p.name
 END
 ````
 
-# hasta aqui e
+# hasta aqui esta lo necesario para las cryptos con relacion de 'valer' con propiedades de unidad en que se mide y 'valor' podemos crear otra relacion para otro tipo de cambio 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzk0NzUxMzgsLTEzOTUyNjk5MCw2Mz
-AzOTA3NDNdfQ==
+eyJoaXN0b3J5IjpbMTc0MDE5MjY3MSwtMTM5NTI2OTkwLDYzMD
+M5MDc0M119
 -->
