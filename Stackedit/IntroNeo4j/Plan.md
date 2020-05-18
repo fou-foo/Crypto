@@ -26,8 +26,19 @@ CREATE (p)-[:ACTED_IN]->(m)
 ```
 ### Add properties to relationships 
 
-``
+```sql
+MATCH (p:Person)-[rel:ACTED_IN]->(m:Movie)
+WHERE m.title = 'Forrest Gump'
+SET rel.roles =
+CASE p.name
+  WHEN 'Tom Hanks' THEN ['Forrest Gump']
+  WHEN 'Robin Wright' THEN ['Jenny Curran']
+  WHEN 'Gary Sinise' THEN ['Lieutenant Dan Taylor']
+END
+````
+
+# hasta aqui e
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODg5MTExMDksLTEzOTUyNjk5MCw2Mz
+eyJoaXN0b3J5IjpbLTEyMzk0NzUxMzgsLTEzOTUyNjk5MCw2Mz
 AzOTA3NDNdfQ==
 -->
