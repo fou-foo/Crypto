@@ -7,15 +7,14 @@ Luego relaciones
 Ejemplo 
 
  ```sql
- MATCH (a:Person), (m:Movie), (p:Person)
-WHERE a.name = 'Liam Neeson' AND
-      m.title = 'Batman Begins' AND
-      p.name = 'Benjamin Melniker'
-CREATE (a)-[:ACTED_IN]->(m)<-[:PRODUCED]-(p)
-RETURN a, m, p
+MATCH (a:Person), (m:Movie)
+WHERE a.name = 'Christian Bale' AND m.title = 'Batman Begins'
+CREATE (a)-[rel:ACTED_IN]->(m)
+SET rel.roles = ['Bruce Wayne','Batman']
+RETURN a, m
 ```
 
-
+__When you create relationships based upon a `MATCH` clause, you must be certain that only a single node is returned for the `MATCH`, otherwise multiple relationships will be created.__
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDAxMjMwMiw2MzAzOTA3NDNdfQ==
+eyJoaXN0b3J5IjpbLTEzOTUyNjk5MCw2MzAzOTA3NDNdfQ==
 -->
